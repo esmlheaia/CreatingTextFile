@@ -1,6 +1,6 @@
 ﻿namespace CreatingTextFile
 {
-    partial class FrmFileNamecs
+    partial class FrmFileName
     {
         /// <summary>
         /// Required designer variable.
@@ -62,7 +62,7 @@
             this.btnOkay.Text = "Okay";
             this.btnOkay.UseVisualStyleBackColor = true;
             // 
-            // FrmFileNamecs
+            // FrmFileName
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -72,7 +72,7 @@
             this.Controls.Add(this.btnOkay);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtFileName);
-            this.Name = "FrmFileNamecs";
+            this.Name = "FrmFileName";
             this.Text = "FrmFileNamecs";
             this.ResumeLayout(false);
             this.PerformLayout();
