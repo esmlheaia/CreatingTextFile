@@ -25,8 +25,11 @@ namespace CreatingTextFile
         }
         private void btnOkay_Click(object sender, EventArgs e)
         {
-            FileNamecs = txtFileName.Text + "txt"; // Get user input from the text box
+            FileNamecs = txtFileName.Text + ".txt"; // Get user input from the text box
             Close(); // Close the form
+
+            FrmRegistration reg = new FrmRegistration();
+            reg.Show();
         }
     }
 }

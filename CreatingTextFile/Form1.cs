@@ -28,7 +28,11 @@ namespace CreatingTextFile
             string getInput = txtInput.Text; // Get user input from the text box
 
             // Get the path to the My Documents folder
-            string docPath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+            //string docPath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+
+            string relativePath = @"../../05LabEx_Stream_Joson_Shiela_Mae"; // Set the path to a specific folder
+            string docPath = Path.GetFullPath(relativePath); // Get the full path
+
             using (StreamWriter outputFile = new StreamWriter(Path.Combine(docPath, FrmFileName.SetFileName()))) // Create a new text file in the My Documents folder
             {
                 outputFile.WriteLine(getInput); // Write the user input to the text file

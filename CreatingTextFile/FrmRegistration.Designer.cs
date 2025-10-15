@@ -39,7 +39,7 @@
             this.label9 = new System.Windows.Forms.Label();
             this.txtStudentNo = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.txtLastNName = new System.Windows.Forms.TextBox();
+            this.txtLastName = new System.Windows.Forms.TextBox();
             this.txtAge = new System.Windows.Forms.TextBox();
             this.txtContactNo = new System.Windows.Forms.TextBox();
             this.txtMI = new System.Windows.Forms.TextBox();
@@ -168,13 +168,13 @@
             this.label10.TabIndex = 10;
             this.label10.Text = "Program:";
             // 
-            // txtLastNName
+            // txtLastName
             // 
-            this.txtLastNName.Location = new System.Drawing.Point(114, 116);
-            this.txtLastNName.Multiline = true;
-            this.txtLastNName.Name = "txtLastNName";
-            this.txtLastNName.Size = new System.Drawing.Size(142, 22);
-            this.txtLastNName.TabIndex = 11;
+            this.txtLastName.Location = new System.Drawing.Point(114, 116);
+            this.txtLastName.Multiline = true;
+            this.txtLastName.Name = "txtLastName";
+            this.txtLastName.Size = new System.Drawing.Size(142, 22);
+            this.txtLastName.TabIndex = 11;
             // 
             // txtAge
             // 
@@ -276,7 +276,7 @@
             this.Controls.Add(this.txtMI);
             this.Controls.Add(this.txtContactNo);
             this.Controls.Add(this.txtAge);
-            this.Controls.Add(this.txtLastNName);
+            this.Controls.Add(this.txtLastName);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.txtStudentNo);
             this.Controls.Add(this.label9);
@@ -308,7 +308,7 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox txtStudentNo;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox txtLastNName;
+        private System.Windows.Forms.TextBox txtLastName;
         private System.Windows.Forms.TextBox txtAge;
         private System.Windows.Forms.TextBox txtContactNo;
         private System.Windows.Forms.TextBox txtMI;
