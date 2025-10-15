@@ -10,17 +10,16 @@ using System.Windows.Forms;
 
 namespace CreatingTextFile
 {
-    public partial class FrmLab1 : Form
+    public partial class FrmFileNamecs : Form
     {
-        public FrmLab1()
+        public FrmFileNamecs()
         {
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void textBox1_TextChanged(object sender, EventArgs e)
         {
-            FrmFileNamecs frm = new FrmFileNamecs();
-            ShowDialog();
+
         }
     }
 }
