@@ -40,7 +40,6 @@
             this.txtFileName.Name = "txtFileName";
             this.txtFileName.Size = new System.Drawing.Size(275, 29);
             this.txtFileName.TabIndex = 0;
-            this.txtFileName.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label1
             // 
@@ -55,12 +54,13 @@
             // btnOkay
             // 
             this.btnOkay.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnOkay.Location = new System.Drawing.Point(125, 143);
+            this.btnOkay.Location = new System.Drawing.Point(117, 147);
             this.btnOkay.Name = "btnOkay";
             this.btnOkay.Size = new System.Drawing.Size(101, 32);
             this.btnOkay.TabIndex = 2;
             this.btnOkay.Text = "Okay";
             this.btnOkay.UseVisualStyleBackColor = true;
+            this.btnOkay.Click += new System.EventHandler(this.btnOkay_Click);
             // 
             // FrmFileName
             // 
@@ -73,7 +73,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtFileName);
             this.Name = "FrmFileName";
-            this.Text = "FrmFileNamecs";
+            this.Text = "FrmFileName";
             this.ResumeLayout(false);
             this.PerformLayout();
 

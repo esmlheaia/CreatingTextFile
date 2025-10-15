@@ -23,13 +23,13 @@ namespace CreatingTextFile
         private void button1_Click(object sender, EventArgs e)
         {
             FrmFileName frm = new FrmFileName(); // Create a new instance of the form
-            ShowDialog(); // Show the form as a modal dialog box
+            frm.ShowDialog(); // Show the form as a modal dialog box
 
             string getInput = txtInput.Text; // Get user input from the text box
 
             // Get the path to the My Documents folder
             string docPath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
-            using (StreamWriter outputFile = new StreamWriter(Path.Combine(docPath, FrmFileName.SetFileName))) // Create a new text file in the My Documents folder
+            using (StreamWriter outputFile = new StreamWriter(Path.Combine(docPath, FrmFileName.SetFileName()))) // Create a new text file in the My Documents folder
             {
                 outputFile.WriteLine(getInput); // Write the user input to the text file
                 Console.WriteLine(getInput); // Write the user input to the console
