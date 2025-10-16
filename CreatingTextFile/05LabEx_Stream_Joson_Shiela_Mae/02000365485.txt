@@ -1,1 +1,7 @@
-02000365485
+Student No. 02000365485
+FullName: Joson, Shiela Mae, P.
+Program: BS in Information Technology (BSIT)
+Gender: Female
+Age: 21
+Birthday: 2004-03-18
+Contact No.: 09197359592

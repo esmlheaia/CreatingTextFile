@@ -20,16 +20,20 @@ namespace CreatingTextFile
 
         private void btnRegister_Click(object sender, EventArgs e)
         {
-            string[] list = new string[7]; // Declare an array to hold the user input
-            list[0] = "Student No." + txtStudentNo.Text; // Get user input from the text box
-            list[1] = "FullName: " + txtFirstName.Text + ", " + txtLastName + ", " + txtMI; // Get user input from the text box
+            String[] list = new string[7]; // Declare an array to hold the user input
+            list[0] = "Student No. " + txtStudentNo.Text; // Get user input from the text box
+            list[1] = "FullName: " + txtLastName.Text + ", " + txtFirstName.Text + ", " + txtMI.Text; // Get user input from the text box
             list[2] = "Program: " + cboxProgram.Text;
             list[3] = "Gender: " + cbGender.Text;
             list[4] = "Age: " + txtAge.Text;
             list[5] = "Birthday: " + dateBirth.Value.ToString("yyyy-MM-dd");
             list[6] = "Contact No.: " + txtContactNo.Text;
 
-            using (StreamWriter outputFile = new StreamWriter(Path.Combine(txtStudentNo.Text + ".txt"))) // Create a new text file in the My Documents folder
+            string relativePath = @"../../05LabEx_Stream_Joson_Shiela_Mae"; // Set the path to a specific folder
+            string docPath = Path.GetFullPath(relativePath); // Get the full path
+
+
+            using (StreamWriter outputFile = new StreamWriter(Path.Combine(docPath, txtStudentNo.Text + ".txt"))) // Create a new text file in the My Documents folder
             {
                 foreach (string line in list)
                 {
